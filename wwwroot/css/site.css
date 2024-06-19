@@ -1,0 +1,149 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#CreateAccountLink {
+    float: right;
+}
+
+.login-form {
+    padding: 10%;
+}
+
+.login-form .form-group {
+    padding: 02%;
+}
+
+.login-form h3 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container form {
+    padding: 20%;
+}
+
+.btnSubmit {
+    width: 30%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+
+#showingSelectButton {
+    width: 10%;
+    height: 50%;
+    border-radius: 1rem;
+    padding: .5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+    float: right;
+    margin-top: 15px;
+}
+
+#seatSelectButton {
+    width: 20%;
+    height: 50%;
+    border-radius: 1rem;
+    padding: .5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+    float: right;
+    margin-top: 15px;
+    margin-right: 75px;
+}
+
+#seatSelectForm {
+    padding: 15%;
+    margin-right: 75px;
+}
+
+#concessionSelectForm {
+    padding: 10%;
+    width: 55%;
+}
+
+.concessionQuantityInput {
+    float: right;
+}
+
+#concessionSelectButton {
+    width: 50%;
+    height: 50%;
+    border-radius: 1rem;
+    padding: 1%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+    float: right;
+}
+
+.alert {
+    width: 50%;
+    text-align: center;
+}
+
+.seatSummary {
+    float: left;
+}
+
+.seatPrice {
+    float: right;
+}
+
+#orderTicketPrice {
+    float: right;
+}
+
+#orderTicketPrice {
+    float: right;
+}
+
+#concessionPrice {
+    float: right;
+}
+
+#orderTotal {
+    float: right;
+}
+
+#concessionLinePrice {
+    float: right;
+}
+
+.concessionInvt {
+    float: right;
+    width: 40%;
+}
+
+#concessionQuantityHeader {
+    float: right;
+    text-align: right;
+}
