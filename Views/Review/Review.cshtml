@@ -1,0 +1,27 @@
+﻿@model Theater.ViewModels.MovieReviewViewModel
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                User
+            </th>
+            <th>
+                Review
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model.MovieReviews)
+        {
+            <tr>
+                <td>
+                    @review.User
+                </td>
+                <td>
+                    @review.Review
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

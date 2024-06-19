@@ -1,0 +1,35 @@
+﻿@model Theater.ViewModels.OrderViewModel
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Total for order # @Model.OrderId
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <div id="ticketLineOrder"> @Model.ShowingDisplay.TheaterName @Model.ShowingDisplay.MovieName @Model.ShowingDisplay.Showtime</div> <div id="orderTicketPrice"> $@Math.Round(@Model.Ticket.Price, 2)</div>
+            </td>
+        </tr>
+        @foreach (var concession in Model.ConcessionLines)
+        {
+            <tr>
+                @if (concession.Quantity > 0)
+                {
+                    <td>
+                        <div class="seatSummary">@concession.Quantity @concession.ConcessionName * @Math.Round(concession.ConcessionPrice, 2) </div>
+                        <div id="concessionLinePrice">
+                            $@Math.Round(concession.Total, 2)
+                        </div>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+<h4 id="orderTotal">
+    Total: $@Math.Round(@Model.OrderTotal, 2)
+</h4>

@@ -1,0 +1,29 @@
+﻿@model Theater.ViewModels.UserLogin
+@{
+    ViewData["Title"] = "Log in";
+}
+@if (ViewData["lastLoginFailed"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        The entered credentials were not correct.
+    </div>
+}
+
+<form asp-action="LogIn" asp-controller="User">
+    <div class="col-md-6 login-form">
+        <h3>Please log in</h3>
+        <div class="form-group">
+            <input class="form-control" asp-for="Email" placeholder="Your Email *" />
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div class="form-group">
+            <input class="form-control" asp-for="Password" placeholder="Your Password *" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <a id="CreateAccountLink" href="CreateAccount">Create Account</a>
+        <br />
+        <div class="form-group">
+            <input type="submit" class="btnSubmit" value="Login" />
+        </div>
+    </div>
+</form>

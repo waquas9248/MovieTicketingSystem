@@ -1,0 +1,23 @@
+﻿@model Theater.ViewModels.ReviewSelectViewModel
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Movie Reviews
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model.Movies)
+        {
+            <tr>
+                <td>
+                    <div class="movieReviewLink">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Review" asp-action="Review" asp-route-id="@movie.MovieId">@movie.Name</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

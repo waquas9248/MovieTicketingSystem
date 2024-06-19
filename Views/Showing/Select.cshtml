@@ -1,0 +1,66 @@
+﻿@model Theater.ViewModels.ShowingViewModel
+
+<form asp-action="Select" asp-controller="Seat">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Theater
+                </th>
+                <th>
+                    Screen
+                </th>
+                <th>
+                    Movie
+                </th>
+                <th>
+                    Showtime
+                </th>
+                <th>
+                    Genre
+                </th>
+                <th>
+                    Rating
+                </th>
+                <th>
+                    Selection
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var showing in Model.Showings)
+            {
+                <tr>
+                    <td>
+                        @showing.TheaterName
+                    </td>
+                    <td>
+                        @showing.ScreenDesc
+                    </td>
+                    <td>
+                        @showing.MovieName
+                    </td>
+                    <td>
+                        @showing.Showtime
+                    </td>
+                    <td>
+                        @showing.Genre
+                    </td>
+                    <td>
+                        @showing.Rating
+                    </td>
+                    <td>
+                        <input type="radio" asp-for="SelectedShowingId" checked="" name="ShowingId" value="@showing.ShowingId">
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>
+
+    </p>
+    <div class="form-group">
+        <input type="submit" id="showingSelectButton" class=" btnSubmit" value="Select" />
+    </div>
+</form>
+

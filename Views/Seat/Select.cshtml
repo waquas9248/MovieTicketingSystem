@@ -1,0 +1,32 @@
+﻿@model Theater.ViewModels.SeatTicketViewModel
+
+<form id="seatSelectForm" asp-action="Select" asp-controller="Concession">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Seat
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ticket in Model.Tickets)
+            {
+                <tr>
+                    <td>
+                        <div class="seatSummary">Seat @ticket.SeatId [@ticket.Type]</div> <div class="seatPrice">$@Math.Round(ticket.Price, 2)</div>
+                    </td>
+                    <td>
+                        <input type="radio" asp-for="SelectedSeatId" checked="" name="SeatId" value="@ticket.SeatId">
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>
+
+    </p>
+    <div class="form-group">
+        <input type="submit" id="seatSelectButton" class=" btnSubmit" value="Select" />
+    </div>
+</form>

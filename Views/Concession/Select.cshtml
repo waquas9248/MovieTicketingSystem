@@ -1,0 +1,42 @@
+﻿@model Theater.ViewModels.ConcessionViewModel
+
+<form id="concessionSelectForm" asp-action="ProcessOrder" asp-controller="Order">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    <div id="concessionQuantityHeader">Quantity</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var concession in Model.Concessions)
+            {
+                <tr>
+                    <td>
+                        <div class="concessionName">@concession.Name</div> 
+                    </td>
+                    <td>
+                        <div class="concessionPrice">$@Math.Round(concession.Price, 2)</div>
+                    </td>
+                    <td>
+                        <input class="form-control concessionInvt" asp-for="@concession.InventoryQuantity" placeholder="0" />
+                        <span asp-validation-for="@concession.InventoryQuantity"></span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>
+
+    </p>
+    <div class="form-group">
+        <input type="submit" id="concessionSelectButton" class=" btnSubmit" value="Select" />
+    </div>
+</form>

@@ -1,0 +1,23 @@
+﻿@model Theater.ViewModels.DateSelection
+@{
+}
+@if (ViewData["invalidDate"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        The entered date is not valid
+    </div>
+}
+
+<form asp-action="DateSelect" asp-controller="DateSelect">
+    <div class="col-md-6 login-form">
+        <h3>Select a ticket Date</h3>
+        <div class="form-group">
+            <input class="form-control" asp-for="DateTime" />
+            <span asp-validation-for="DateTime"></span>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="submit" class="btnSubmit" value="Select Date" />
+        </div>
+    </div>
+</form>
