@@ -40,9 +40,9 @@ Theater information, movie information, food/drink choices, and user information
 ![image](https://github.com/user-attachments/assets/b26e7b2e-97e3-47b9-82a2-a13625db2e87)
 
 ### Contributors
-Charles Kangas - Lead, Backend
-Ashhad Syed - Database, Backend
-Katie Garbacz - Frontend
-Shawn Eidem - DevOps, Documentation
-Ekheang Phy - Testing, Documentation
+- Charles Kangas - Lead, Backend
+- Ashhad Syed - Database, Backend
+- Katie Garbacz - Frontend
+- Shawn Eidem - DevOps, Documentation
+- Ekheang Phy - Testing, Documentation
 
