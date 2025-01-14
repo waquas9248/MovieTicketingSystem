@@ -7,7 +7,7 @@ This project focused on the implementation of a Movie theater ticketing software
 In the movie industry, making sure that customers are able to consistently purchase movie theater tickets and reserve seats of their choice ahead of arriving at a movie showing is key to customer satisfaction, happiness, and retention. In today’s world, most movie theater goers have come to expect an unspoken standard that they should be able to see shows that are currently at a theater within at least a week’s time, when those shows are playing, and the ability to reserve seats of their choice upon purchasing tickets. The lack of these features will inevitably end up driving customers away resulting in a loss of revenue for a given movie theater. This project aimed to solve this exact problem for a hypothetical movie theater chain by developing and providing a movie theater chain with the software needed to bring their customer experience to the standard level.
 
 ## Features
-This project will be implemented using C# and .NET on both the backend and frontend. Our DBMS of choice for this project will be Microsoft SQL Server. Additionally, this project will be deployed on Azure. We will define our project goals to be achieved using these tools as follows:
+This project was implemented using C# and .NET on both the backend and frontend. Our DBMS of choice for this project will be Microsoft SQL Server. Additionally, this project was deployed on Azure. The project goals achieved using these tools were as follows:
 This software solution should be accessible to the customers through a web browser.
 Customers should be able to see the following information about movies and their showings as they work through the reservation process:
 - Movie title
