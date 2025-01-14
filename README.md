@@ -1,4 +1,4 @@
-# MovieTheaterSystem
+# Movie Ticketing System
 
 ## Description
 This project focused on the implementation of a Movie theater ticketing software. The software was implemented using a web interface to allow prospective users a convenient way to use the software. A requirement of the project was the need of a DBMS and is a good study into the role and work of a DBMS.
