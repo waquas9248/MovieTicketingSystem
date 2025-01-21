@@ -3,6 +3,13 @@
 ## Description
 This project focused on the implementation of a Movie theater ticketing software. The software was implemented using a web interface to allow prospective users a convenient way to use the software. A requirement of the project was the need of a DBMS and is a good study into the role and work of a DBMS.
 
+## Contributors
+- Charles Kangas - Lead, Backend
+- Ashhad Syed - Database, Backend
+- Katie Garbacz - Frontend
+- Shawn Eidem - DevOps, Documentation
+- Ekheang Phy - Testing, Documentation
+
 ## Background
 In the movie industry, making sure that customers are able to consistently purchase movie theater tickets and reserve seats of their choice ahead of arriving at a movie showing is key to customer satisfaction, happiness, and retention. In today’s world, most movie theater goers have come to expect an unspoken standard that they should be able to see shows that are currently at a theater within at least a week’s time, when those shows are playing, and the ability to reserve seats of their choice upon purchasing tickets. The lack of these features will inevitably end up driving customers away resulting in a loss of revenue for a given movie theater. This project aimed to solve this exact problem for a hypothetical movie theater chain by developing and providing a movie theater chain with the software needed to bring their customer experience to the standard level.
 
@@ -39,10 +46,4 @@ Theater information, movie information, food/drink choices, and user information
 ![image](https://github.com/user-attachments/assets/47d583e4-7314-4179-ab15-e750bde7d0e9)
 ![image](https://github.com/user-attachments/assets/b26e7b2e-97e3-47b9-82a2-a13625db2e87)
 
-### Contributors
-- Charles Kangas - Lead, Backend
-- Ashhad Syed - Database, Backend
-- Katie Garbacz - Frontend
-- Shawn Eidem - DevOps, Documentation
-- Ekheang Phy - Testing, Documentation
 
